@@ -12,8 +12,6 @@ top_nav.classList = "navbar navbar-expand-sm bg-dark p-0";
 let top_nav_ul = document.createElement('ul');
 top_nav_ul.classList = "navbar-nav ml-n2";
 
-// Adding a tag and li tag to ul tag
-
 for (let i = 0; i < top_nav_items.length; i++) {
     let top_nav_li = document.createElement('li');
     top_nav_li.classList = "nav-item border-right border-secondary";
@@ -132,8 +130,6 @@ for (let i = 0; i < left_News_slider_items.length; i++) {
     left_News_slider.append(left_News_slider_img);
     left_News_slider_div.append(left_News_slider);
 }
-
-
 
 
 // Right News slider
