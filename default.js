@@ -2,7 +2,7 @@ alert("Working...");
 
 // Top Navigation bar
 
-let top_nav_items = ["Monday, January 1 2045", "Advertise", "Contact", "Login", "Kaheel", "Kafeel", "Zaid", "Zubair"];
+let top_nav_items = ["Monday, 7 Septumber, 2023", "Advertise", "Contact", "Login"];
 
 let top_nav_div = document.getElementById("top_nav_div");
 
@@ -31,12 +31,12 @@ top_nav_div.appendChild(top_nav);
 // Bottom Navigation bar
 
 let bottom_nav_items = [
-    { innerHtml: "Home", href: "index.html" },
-    { innerHtml: "Category", href: "category.html" },
+    { innerHtml: "News", href: "index.html" },
+    { innerHtml: "Opinion", href: "category.html" },
     { innerHtml: "Single News", href: "single.html" },
-    { innerHtml: "Contact", href: "contact.html" },
-    { innerHtml: "Kaheel", href: "kaheel.html" },
-    { innerHtml: "Kafeel", href: "kafeel.html" }
+    { innerHtml: "Features", href: "contact.html" },
+    { innerHtml: "Economy", href: "kaheel.html" },
+    { innerHtml: "More", href: "kafeel.html" }
 ];
 
 let bottom_nav_div = document.getElementById("navbarCollapse");
@@ -84,9 +84,9 @@ bottom_nav_div.append(child_bottom_nav_search);
 // Left News SLider 
 
 let left_News_slider_items = [
-    { hrefText: "Business News", hrefDate: "Jan 01, 2045", imgSrc: "img/news-800x500-1.jpg", hrefPara: "Lorem ipsum, dolor sit amet consectetur adipisicing elit." },
-    { hrefText: "Business News", hrefDate: "Jan 01, 2045", imgSrc: "img/news-800x500-2.jpg", hrefPara: "Lorem ipsum, dolor sit amet consectetur adipisicing elit." },
-    { hrefText: "Business News", hrefDate: "Jan 01, 2045", imgSrc: "img/news-800x500-3.jpg", hrefPara: "Lorem ipsum, dolor sit amet consectetur adipisicing elit." }
+    { hrefText: "Business News", hrefDate: "Sep 7, 2023", imgSrc: "https://www.aljazeera.com/wp-content/uploads/2023/09/2023-08-30T120625Z_813110613_RC2RX2ALCQFA_RTRMADP_3_FRANCE-ISLAM-1694090550.jpg?resize=770%2C513&quality=80", hrefPara: "A Muslim woman walks in a street in Nantes, France" },
+    { hrefText: "Business News", hrefDate: "Sep 7, 2023", imgSrc: "https://www.aljazeera.com/wp-content/uploads/2023/09/33U38WW-highres-1694089217.jpg?resize=770%2C513&quality=80", hrefPara: "Pakistani army personnel inspect the site of a bomb attack in Bannu district of Khyber Pakhtunkhwa province" },
+    { hrefText: "Business News", hrefDate: "Sep 7, 2023", imgSrc: "https://www.aljazeera.com/wp-content/uploads/2023/09/Dude2-1693986878.jpg?resize=770%2C513&quality=80", hrefPara: "Jalel Alouni thinks about his 27-year-old son Mahrez who is in Serbia fleeing a future without hope" }
 ];
 
 let left_News_slider_div = document.getElementById('left_News_slider_div');
@@ -137,10 +137,10 @@ for (let i = 0; i < left_News_slider_items.length; i++) {
 let Right_News_slider_div = document.getElementById('right_News_slider_div');
 
 let right_News_slider_items = [
-    { hrefText: "Business News", hrefDate: "Jan 01, 2045", imgSrc: "img/news-700x435-1.jpg", hrefPara: "Lorem ipsum, dolor sit amet consectetur adipisicing elit." },
-    { hrefText: "Business News", hrefDate: "Jan 01, 2045", imgSrc: "img/news-700x435-2.jpg", hrefPara: "Lorem ipsum, dolor sit amet consectetur adipisicing elit." },
-    { hrefText: "Business News", hrefDate: "Jan 01, 2045", imgSrc: "img/news-700x435-3.jpg", hrefPara: "Lorem ipsum, dolor sit amet consectetur adipisicing elit." },
-    { hrefText: "Business News", hrefDate: "Jan 01, 2045", imgSrc: "img/news-700x435-4.jpg", hrefPara: "Lorem ipsum, dolor sit amet consectetur adipisicing elit." },
+    { hrefText: "Business News", hrefDate: "Sep 7, 2023", imgSrc: "https://www.aljazeera.com/wp-content/uploads/2023/09/2017-06-08T035639Z_1335368517_RC1AB6378760_RTRMADP_3_GULF-QATAR-AIRLINES-1694062666.jpg?resize=770%2C513&quality=80", hrefPara: "Australia's government has been accused" },
+    { hrefText: "Business News", hrefDate: "Sep 7, 2023", imgSrc: "https://www.aljazeera.com/wp-content/uploads/2023/09/afp.com-20230417-PH-GTY-1482904507-highres-1694046385.jpg?resize=770%2C513&quality=80", hrefPara: "Ozempic has been hailed as a weight-loss wonder drug" },
+    { hrefText: "Business News", hrefDate: "Sep 7, 2023", imgSrc: "https://www.aljazeera.com/wp-content/uploads/2023/09/AP23242538288852-1694062179.jpg?resize=770%2C513&quality=80", hrefPara: "A supporter of the January 6 defendants and former President Donald Trump" },
+    { hrefText: "Business News", hrefDate: "Sep 7, 2023", imgSrc: "https://www.aljazeera.com/wp-content/uploads/2023/09/AP23244328375185-1693644123.jpg?resize=770%2C513&quality=80", hrefPara: "India and Pakistan have not played a bilateral cricket series since 2012" },
 ];
 
 for (let i = 0; i < right_News_slider_items.length; i++) {
@@ -192,7 +192,8 @@ for (let i = 0; i < right_News_slider_items.length; i++) {
 // Bottom News Slider
 
 bottom_News_slider_items = [
-    {aText : "Lorem ipsum dolor sit amet elit. Proin interdum lacus eget ante tincidunt, sed faucibus nisl sodales" ,title : "Breaking1"},
+    {title : "Breaking1" ,a1Text : "The Asia Cup cricket tournament is halfway through its schedule of matches but the sport’s administrators in the “host” country Pakistan." ,a2Text : "Many victims were in houses that were washed away, trapped in cars or shocked by electrical wires."},
+    {title : "Breaking2" ,a1Text : "The move comes as the Biden administration seeks to expand protections against oil and gas development on public lands." ,a2Text : "For a decade, water in Kenya’s Rift Valley has been rising due to climate change. The displaced say they want normalcy."},
 ];
 
 for (let i = 0; i < bottom_News_slider_items.length; i++) {
@@ -211,16 +212,26 @@ for (let i = 0; i < bottom_News_slider_items.length; i++) {
     child_bottom_News_div2.style.width = 'calc(100% - 170px)';
     child_bottom_News_div2.style.paddingRight = '90px';
 
-    let childs_bottom_News_div = document.createElement('div');
-    childs_bottom_News_div.classList = 'text-truncate';
+    let childs_bottom_News_div1 = document.createElement('div');
+    childs_bottom_News_div1.classList = 'text-truncate';
 
-    let childs_bottom_News_a = document.createElement('a');
-    childs_bottom_News_a.classList = 'text-white text-uppercase font-weight-semi-bold';
-    childs_bottom_News_a.href = "";
-    childs_bottom_News_a.innerHTML = bottom_News_slider_items[i].aText;
+    let childs_bottom_News_a1 = document.createElement('a');
+    childs_bottom_News_a1.classList = 'text-white text-uppercase font-weight-semi-bold';
+    childs_bottom_News_a1.href = "";
+    childs_bottom_News_a1.innerHTML = bottom_News_slider_items[i].a1Text;
 
-    childs_bottom_News_div.append(childs_bottom_News_a);
-    child_bottom_News_div2.append(childs_bottom_News_div);
+    let childs_bottom_News_div2 = document.createElement('div');
+    childs_bottom_News_div2.classList = 'text-truncate';
+
+    let childs_bottom_News_a2 = document.createElement('a');
+    childs_bottom_News_a2.classList = 'text-white text-uppercase font-weight-semi-bold';
+    childs_bottom_News_a2.href = "";
+    childs_bottom_News_a2.innerHTML = bottom_News_slider_items[i].a2Text;
+
+    childs_bottom_News_div1.append(childs_bottom_News_a1);
+    childs_bottom_News_div2.append(childs_bottom_News_a2);
+    child_bottom_News_div2.append(childs_bottom_News_div1);
+    child_bottom_News_div2.append(childs_bottom_News_div2);
     bottom_News_slider.append(child_bottom_News_div1);
     bottom_News_slider.append(child_bottom_News_div2);
     bottom_News_slider_div.append(bottom_News_slider);
@@ -233,11 +244,11 @@ let featured_News_slider_div = document.getElementById('featured_News');
 featured_News_slider_div.classList = "owl-carousel news-carousel carousel-item-4 position-relative";
 
 let featured_News_slider_items = [
-    {imgSrc : "img/news-700x435-1.jpg" , href1 : "Business" ,href2 : "Jan 01, 2045" ,href3 : "Lorem ipsum dolor sit amet elit..."},
-    {imgSrc : "img/news-700x435-2.jpg" , href1 : "Business" ,href2 : "Jan 01, 2045" ,href3 : "Lorem ipsum dolor sit amet elit..."},
-    {imgSrc : "img/news-700x435-3.jpg" , href1 : "Business" ,href2 : "Jan 01, 2045" ,href3 : "Lorem ipsum dolor sit amet elit..."},
-    {imgSrc : "img/news-700x435-4.jpg" , href1 : "Business" ,href2 : "Jan 01, 2045" ,href3 : "Lorem ipsum dolor sit amet elit..."},
-    {imgSrc : "img/news-700x435-5.jpg" , href1 : "Business" ,href2 : "Jan 01, 2045" ,href3 : "Lorem ipsum dolor sit amet elit..."},
+    {imgSrc : "https://network.aljazeera.net/sites/default/files/events/2023/WEB%20%281%29.jpg" , href1 : "Business" ,href2 : "Sep 7, 2023" ,href3 : "AJCS to delve into involvement of Palestinians in Israel"},
+    {imgSrc : "https://network.aljazeera.net/sites/default/files/events/2023/7E4A9456.jpg" , href1 : "Business" ,href2 : "Sep 7, 2023" ,href3 : "Al Jazeera Balkans Documentary Film Festival"},
+    {imgSrc : "https://network.aljazeera.net/sites/default/files/events/2022/mrkz_ldrst_-_dw.png" , href1 : "Business" ,href2 : "Sep 7, 2023" ,href3 : "Al Jazeera Studies Center hosts lecture on Iran's Islamic Revolution"},
+    {imgSrc : "https://network.aljazeera.net/sites/default/files/events/2022/iran-saudi_map.jpg" , href1 : "Business" ,href2 : "Sep 7, 2023" ,href3 : "The development of Saudi-Iranian relations and prospects for the future"},
+    {imgSrc : "https://network.aljazeera.net/sites/default/files/events/2022/qatar-book-fair-771x513.jpg" , href1 : "Business" ,href2 : "Sep 7, 2023" ,href3 : "26th Doha International Book Fair"},
     
 ];
 
