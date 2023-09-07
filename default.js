@@ -141,14 +141,6 @@ let right_News_slider_items = [
     { hrefText: "Business News", hrefDate: "Jan 01, 2045", imgSrc: "img/news-700x435-2.jpg", hrefPara: "Lorem ipsum, dolor sit amet consectetur adipisicing elit." },
     { hrefText: "Business News", hrefDate: "Jan 01, 2045", imgSrc: "img/news-700x435-3.jpg", hrefPara: "Lorem ipsum, dolor sit amet consectetur adipisicing elit." },
     { hrefText: "Business News", hrefDate: "Jan 01, 2045", imgSrc: "img/news-700x435-4.jpg", hrefPara: "Lorem ipsum, dolor sit amet consectetur adipisicing elit." },
-    { hrefText: "Business News", hrefDate: "Jan 01, 2045", imgSrc: "img/news-700x435-4.jpg", hrefPara: "Lorem ipsum, dolor sit amet consectetur adipisicing elit." },
-    { hrefText: "Business News", hrefDate: "Jan 01, 2045", imgSrc: "img/news-700x435-4.jpg", hrefPara: "Lorem ipsum, dolor sit amet consectetur adipisicing elit." },
-    { hrefText: "Business News", hrefDate: "Jan 01, 2045", imgSrc: "img/news-700x435-4.jpg", hrefPara: "Lorem ipsum, dolor sit amet consectetur adipisicing elit." },
-    { hrefText: "Business News", hrefDate: "Jan 01, 2045", imgSrc: "img/news-700x435-4.jpg", hrefPara: "Lorem ipsum, dolor sit amet consectetur adipisicing elit." },
-    { hrefText: "Business News", hrefDate: "Jan 01, 2045", imgSrc: "img/news-700x435-4.jpg", hrefPara: "Lorem ipsum, dolor sit amet consectetur adipisicing elit." },
-    { hrefText: "Business News", hrefDate: "Jan 01, 2045", imgSrc: "img/news-700x435-4.jpg", hrefPara: "Lorem ipsum, dolor sit amet consectetur adipisicing elit." },
-    { hrefText: "Business News", hrefDate: "Jan 01, 2045", imgSrc: "img/news-700x435-4.jpg", hrefPara: "Lorem ipsum, dolor sit amet consectetur adipisicing elit." },
-    { hrefText: "Business News", hrefDate: "Jan 01, 2045", imgSrc: "img/news-700x435-4.jpg", hrefPara: "Lorem ipsum, dolor sit amet consectetur adipisicing elit." },
 ];
 
 for (let i = 0; i < right_News_slider_items.length; i++) {
@@ -201,7 +193,6 @@ for (let i = 0; i < right_News_slider_items.length; i++) {
 
 bottom_News_slider_items = [
     {aText : "Lorem ipsum dolor sit amet elit. Proin interdum lacus eget ante tincidunt, sed faucibus nisl sodales" ,title : "Breaking1"},
-    {aText : "Lorem ipsum dolor sit amet elit. Proin interdum lacus eget ante tincidunt, sed faucibus nisl sodales" ,title : "Breaking2"}
 ];
 
 for (let i = 0; i < bottom_News_slider_items.length; i++) {
@@ -236,5 +227,59 @@ for (let i = 0; i < bottom_News_slider_items.length; i++) {
 
 }
 
+// Featured News slider
 
+let featured_News_slider_div = document.getElementById('featured_News');
+featured_News_slider_div.classList = "owl-carousel news-carousel carousel-item-4 position-relative";
 
+let featured_News_slider_items = [
+    {imgSrc : "img/news-700x435-1.jpg" , href1 : "Business" ,href2 : "Jan 01, 2045" ,href3 : "Lorem ipsum dolor sit amet elit..."},
+    {imgSrc : "img/news-700x435-2.jpg" , href1 : "Business" ,href2 : "Jan 01, 2045" ,href3 : "Lorem ipsum dolor sit amet elit..."},
+    {imgSrc : "img/news-700x435-3.jpg" , href1 : "Business" ,href2 : "Jan 01, 2045" ,href3 : "Lorem ipsum dolor sit amet elit..."},
+    {imgSrc : "img/news-700x435-4.jpg" , href1 : "Business" ,href2 : "Jan 01, 2045" ,href3 : "Lorem ipsum dolor sit amet elit..."},
+    {imgSrc : "img/news-700x435-5.jpg" , href1 : "Business" ,href2 : "Jan 01, 2045" ,href3 : "Lorem ipsum dolor sit amet elit..."},
+    
+];
+
+for(let i = 0; i < featured_News_slider_items.length; i++) {
+    let featured_News_slider = document.createElement('div');
+    featured_News_slider.classList ="position-relative overflow-hidden";
+    featured_News_slider.style.height = "300px";
+
+    let child_featured_News_slider_img = document.createElement('img');
+    child_featured_News_slider_img.classList = "img-fluid h-100";
+    child_featured_News_slider_img.src = featured_News_slider_items[i].imgSrc;
+    child_featured_News_slider_img.style.objectFit = "cover";
+
+    let child_featured_News_slider_div = document.createElement('div');
+    child_featured_News_slider_div.classList = "overlay";
+
+    let childs_featured_News_slider_div = document.createElement('div');
+    childs_featured_News_slider_div.classList = "mb-2";
+
+    let childs_featured_News_slider_a1 = document.createElement('a');
+    childs_featured_News_slider_a1.classList = "badge badge-primary text-uppercase font-weight-semi-bold p-2 mr-2";
+    childs_featured_News_slider_a1.innerHTML = featured_News_slider_items[i].href1;
+    childs_featured_News_slider_a1.href = "";
+
+    let childs_featured_News_slider_a2 = document.createElement('a');
+    childs_featured_News_slider_a2.classList = "text-white";
+    childs_featured_News_slider_a2.href = "";
+
+    let childs_featured_News_slider_small = document.createElement('small');
+    childs_featured_News_slider_small.innerHTML = featured_News_slider_items[i].href2;
+
+    let childs_featured_News_slider_a3 = document.createElement('a');
+    childs_featured_News_slider_a3.classList = "h6 m-0 text-white text-uppercase font-weight-semi-bold";
+    childs_featured_News_slider_a3.href = "";
+    childs_featured_News_slider_a3.innerText = featured_News_slider_items[i].href3;
+
+    childs_featured_News_slider_a2.append(childs_featured_News_slider_small);
+    childs_featured_News_slider_div.append(childs_featured_News_slider_a1);
+    childs_featured_News_slider_div.append(childs_featured_News_slider_a2);
+    child_featured_News_slider_div.append(childs_featured_News_slider_div);
+    child_featured_News_slider_div.append(childs_featured_News_slider_a3);
+    featured_News_slider.append(child_featured_News_slider_div);
+    featured_News_slider.append(child_featured_News_slider_img);
+    featured_News_slider_div.append(featured_News_slider);
+}
