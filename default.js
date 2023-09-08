@@ -349,6 +349,4 @@ for(let i = 0; i < tranding_News_items.length; i++) {
     tranding_News.append(child_tranding_News_div);
     tranding_News.append(child_tranding_News_img);
     tranding_News_div.append(tranding_News);
-
-    alert(tranding_News_div);
 }
