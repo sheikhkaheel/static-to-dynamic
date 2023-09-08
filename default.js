@@ -294,3 +294,61 @@ for(let i = 0; i < featured_News_slider_items.length; i++) {
     featured_News_slider.append(child_featured_News_slider_img);
     featured_News_slider_div.append(featured_News_slider);
 }
+
+
+// Tranding News 
+
+
+let tranding_News_div = document.getElementById("tranding_News");
+
+let tranding_News_items = [
+    {imgSrc : "img/news-110x110-1.jpg" , href1 : "Business" , href2 : "Jan 01, 2045" , href3 : "Lorem ipsum dolor sit amet elit..."},
+    {imgSrc : "img/news-110x110-2.jpg" , href1 : "Business" , href2 : "Jan 01, 2045" , href3 : "Lorem ipsum dolor sit amet elit..."},
+    {imgSrc : "img/news-110x110-3.jpg" , href1 : "Business" , href2 : "Jan 01, 2045" , href3 : "Lorem ipsum dolor sit amet elit..."},
+    {imgSrc : "img/news-110x110-4.jpg" , href1 : "Business" , href2 : "Jan 01, 2045" , href3 : "Lorem ipsum dolor sit amet elit..."},
+    {imgSrc : "img/news-110x110-5.jpg" , href1 : "Business" , href2 : "Jan 01, 2045" , href3 : "Lorem ipsum dolor sit amet elit..."},
+];
+
+for(let i = 0; i < tranding_News_items.length; i++) {
+    let tranding_News = document.createElement('div');
+    tranding_News.classList ="d-flex align-items-center bg-white mb-3";
+    tranding_News.style.height = "110px";
+
+    let child_tranding_News_img = document.createElement('img');
+    child_tranding_News_img.src = tranding_News_items[i].imgSrc;
+    child_tranding_News_img.classList = "img-fluid";
+
+    let child_tranding_News_div = document.createElement('div');
+    child_tranding_News_div.classList = "w-100 h-100 px-3 d-flex flex-column justify-content-center border border-left-0";
+    
+    let childs_tranding_News_div = document.createElement('div');
+    childs_tranding_News_div.classList = "mb-2";
+    
+    let childs_tranding_News_a1 = document.createElement('a');
+    childs_tranding_News_a1.href = "";
+    childs_tranding_News_a1.classList = "badge badge-primary text-uppercase font-weight-semi-bold p-1 mr-2";
+    childs_tranding_News_a1.innerHTML = tranding_News_items[i].href1;
+    
+    let childs_tranding_News_a2 = document.createElement('a');
+    childs_tranding_News_a2.href = "";
+    childs_tranding_News_a2.classList = "text-body";
+    
+    let childs_tranding_News_small = document.createElement('small');
+    childs_tranding_News_small.innerHTML = tranding_News_items[i].href2;
+    
+    let childs_tranding_News_a3 = document.createElement('a');
+    childs_tranding_News_a3.href = "";
+    childs_tranding_News_a3.classList = "h6 m-0 text-secondary text-uppercase font-weight-bold";
+    childs_tranding_News_a3.innerHTML = tranding_News_items[i].href3
+    
+    childs_tranding_News_a2.append(childs_tranding_News_small);
+    childs_tranding_News_div.append(childs_tranding_News_a1);
+    childs_tranding_News_div.append(childs_tranding_News_a2);
+    child_tranding_News_div.append(childs_tranding_News_div);
+    child_tranding_News_div.append(childs_tranding_News_a3);
+    tranding_News.append(child_tranding_News_div);
+    tranding_News.append(child_tranding_News_img);
+    tranding_News_div.append(tranding_News);
+
+    alert(tranding_News_div);
+}
